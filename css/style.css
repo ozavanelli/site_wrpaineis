@@ -1,0 +1,388 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+}
+
+main {
+    padding-top: 70px;
+}
+
+
+/* Header */
+
+header {
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 999;
+    -webkit-box-shadow: 0px 1px 31px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 31px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 31px 1px rgba(0, 0, 0, 0.75);
+}
+
+header .row {
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: auto;
+    height: 50px;
+}
+
+header nav {
+    position: absolute;
+    right: 50px;
+}
+
+header nav ul {
+    display: flex;
+    margin-bottom: 0;
+}
+
+header nav ul li {
+    padding-right: 30px;
+}
+
+header nav ul li:last-child {
+    padding-right: 0;
+}
+
+header nav ul li a {
+    font-size: 14px;
+    color: #00507E;
+    border-bottom: 1px solid white;
+    padding-bottom: 0px;
+    transition: ease .4s;
+}
+
+header nav ul li a:hover {
+    opacity: .7;
+    transition: ease .4s;
+}
+
+header nav ul li a.active {
+    border-bottom: 1px solid #00507E;
+    padding-bottom: 3px;
+    transition: ease.4s;
+}
+
+
+/* header */
+
+
+/* introdução */
+
+.introducao {
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(../img/bg-introducao.jpg);
+    background-position: bottom;
+}
+
+.introducao h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+}
+
+.introducao h5 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+
+/* fim introducao  */
+
+
+/* home - sobre  */
+
+.home-sobre {
+    padding: 100px 0;
+}
+
+.home-sobre h1 {
+    text-align: center;
+    color: #00507E;
+}
+
+.home-sobre h1::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 2px;
+    background: #00507E;
+    margin: 0 auto 60px auto;
+}
+
+.conteudo-sobre {
+    justify-content: space-between;
+    text-align: right;
+}
+
+.home-sobre p {
+    text-align: justify;
+    max-width: 600px;
+    color: #4A4A4A;
+    margin-bottom: 30px;
+}
+
+.home-sobre img {
+    max-width: 350px;
+    height: auto;
+}
+
+
+/* fim home-sobre */
+
+
+/* serviços */
+
+.servicos {
+    padding: 100px 0;
+    background: #E3E3E3;
+}
+
+.servicos h1 {
+    margin: 0 auto;
+    color: #00507E;
+}
+
+.servicos h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #00507E;
+    margin: 14px auto 10px auto;
+}
+
+.servicos .itens-servicos {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.servicos .item-servicos {
+    padding: 30px 10px;
+    margin: 0 auto;
+    transition: transform .2s;
+}
+
+.servicos .item-servicos img {
+    height: 100px;
+    width: auto;
+}
+
+.servicos .item-servicos h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #00507E;
+    margin-bottom: 20px;
+}
+
+.servicos .item-servicos p {
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #1B1B1B;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* fim serviços */
+
+
+/* Início Slide Projetos */
+
+.projetos {
+    padding: 100px 0;
+}
+
+.projetos h1 {
+    margin: 0 auto;
+    color: #00507E;
+}
+
+.projetos h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #00507E;
+    margin: 14px auto 60px auto;
+}
+
+.projetos .swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projetos .swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.projetos i {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.projetos .gallery-top {
+    height: 70vh;
+    width: 100%;
+}
+
+.projetos .gallery-thumbs {
+    height: 20vh;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.projetos .gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.projetos .gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+
+/* Fim Slide Projetos */
+
+
+/* Início Contato */
+
+.contato {
+    margin: 0 0 100px 0;
+}
+
+.contato h1 {
+    margin: 0 auto;
+    color: #00507E;
+}
+
+.contato h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #00507E;
+    margin: 14px auto 60px auto;
+}
+
+.contato input,
+.contato textarea {
+    width: 100%;
+    border: 1px solid #00507E;
+    color: #00507E;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+}
+
+.contato input:focus,
+.contato textarea:focus {
+    outline: none;
+}
+
+.contato button {
+    background-color: #00507E;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    width: 130px;
+    text-align: left;
+}
+
+.contato button:hover i {
+    margin-left: 20px;
+    transition: ease.4s;
+}
+
+.contato button i {
+    margin-left: 10px;
+    transition: ease.4s;
+}
+
+.contato ul li {
+    margin-bottom: 15px;
+}
+
+.contato .dados-contato i {
+    color: #00507E;
+    font-size: 22px;
+    margin-right: 15px;
+}
+
+.contato .dados-contato span {
+    color: #1B1B1B;
+}
+
+.contato .redes-sociais i {
+    color: #00507E;
+    font-size: 35px;
+    margin-right: 20px;
+}
+
+.contato .redes-sociais i:hover,
+.contato .dados-contato a:hover {
+    opacity: 0.8;
+}
+
+
+/* Fim Contato */
+
+
+/* Início Footer  */
+
+footer {
+    background-color: #00507E;
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+
+/* Fim Footer  */
